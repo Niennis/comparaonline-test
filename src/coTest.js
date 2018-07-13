@@ -14,8 +14,11 @@ class CarInsurance {
     for (var i = 0; i < this.products.length; i++) {
       if (this.products[i].name != 'Full Coverage' && this.products[i].name != 'Special Full Coverage') {
         if (this.products[i].price > 0) {
-          if (this.products[i].name != 'Mega Coverage') {
+          if (this.products[i].name != 'Mega Coverage' && this.products[i].name != 'Super Sale') {
             this.products[i].price = this.products[i].price - 1;
+          }
+          if (this.products[i].name == 'Super Sale') {
+            this.products[i].price = this.products[i].price -2;
           }
         }
       } else {
@@ -29,7 +32,7 @@ class CarInsurance {
             }
             if (this.products[i].sellIn < 6) {
               if (this.products[i].price < 50) {
-                this.products[i].price = this.products[i].price + 1;
+                this.products[i].price = this.products[i].price + 2;
               }
             }
           }
@@ -42,8 +45,8 @@ class CarInsurance {
         if (this.products[i].name != 'Full Coverage') {
           if (this.products[i].name != 'Special Full Coverage') {
             if (this.products[i].price > 0) {
-              if (this.products[i].name != 'Mega Coverage') {
-                this.products[i].price = this.products[i].price - 1;
+              if (this.products[i].name != 'Mega Coverage' && this.products[i].name != 'Super Sale') {
+                this.products[i].price = this.products[i].price - 2;
               }
             }
           } else {
