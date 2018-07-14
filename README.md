@@ -1,5 +1,18 @@
 # ComparaOnline Test Requirements Specification
 
+--------------------------------------------------------------------------------------
+
+### Required commands running
+- `npm run test`, should run the test suite and display the coverage report.
+- `npm run after-30-days`, should display an output similar to `products_after_30_days.txt`.
+
+### Besides, I use the next command
+
+- `npm run coverage`, from Istanbul.js, that shows the coverage of tests.
+
+--------------------------------------------------------------------------------------
+
+
 Hi, welcome to the Software Engineer CO Test. In this test we expect to see your approach to refactor a legacy code into a testeable, object oriented solution.
 
 ### We will only consider your application if you submit your own repository with the proposed solution. Forks or pull requests to our repo will DISCARD your application.
