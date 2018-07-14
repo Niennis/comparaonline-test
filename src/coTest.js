@@ -54,7 +54,7 @@ class CarInsurance {
           }
         } else {
           if (this.products[i].price < 50) {
-            this.products[i].price = this.products[i].price + 1;
+            this.products[i].price = this.products[i].price;
           }
         }
       }
